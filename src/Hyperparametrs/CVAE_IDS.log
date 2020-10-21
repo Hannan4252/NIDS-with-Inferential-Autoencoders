@@ -1,0 +1,52 @@
+/var/spool/slurmd/job02534/slurm_script: line 9: module: command not found
+2020-10-21 16:50:03.307378: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-10-21 16:50:03.307446: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2020-10-21 16:50:03.307478: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (irmo): /proc/driver/nvidia/version does not exist
+2020-10-21 16:50:03.345711: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2499990000 Hz
+2020-10-21 16:50:03.348196: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x834af90 executing computations on platform Host. Devices:
+2020-10-21 16:50:03.348232: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Using TensorFlow backend.
+WARNING:tensorflow:From /mnt/stud/home/ahannan/thesis_env/lib/python3.6/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+CVAE_IDS.py:146: RuntimeWarning: overflow encountered in exp
+  kl_losses = 1 + log_var - np.square(mean) - np.exp(log_var)
+CVAE_IDS.py:252: RuntimeWarning: invalid value encountered in greater
+  anomaly_detected = anomaly_detected_loss > threshold
+(2827876, 78)
+(2233164, 78)
+f1 scores for SVM
+ [80.92633464478777, 80.75377845800651, 81.3033950519262]
+ mean f1 scores for SVM is  80.99450271824016
+ std of f1 scores for SVM is  0.22949911366078546
+
+
+f1 scores for conditional variational autoencoders 
+ [86.34947521248601, 88.12763395544853, 86.82264516911141]
+ mean f1 scores for conditional variational autencoders is  87.09991811234865
+ std of f1 scores for conditional variational autoencoders is  0.7519407523566786
+
+
+f1 scores for SVM
+ [82.92037682281584, 84.71853179262187, 84.7884173243025]
+ mean f1 scores for SVM is  84.14244197991341
+ std of f1 scores for SVM is  0.8646014237895955
+
+
+f1 scores for conditional variational autoencoders 
+ [90.79221579735243, 91.37230477207345, 90.84773857447313]
+ mean f1 scores for conditional variational autencoders is  91.00408638129966
+ std of f1 scores for conditional variational autoencoders is  0.26135452572170187
+
+
+f1 scores for SVM
+ [84.86763126303153, 85.31477223292524, 85.41315871531026]
+ mean f1 scores for SVM is  85.198520737089
+ std of f1 scores for SVM is  0.23739679583705695
+
+
+f1 scores for conditional variational autoencoders 
+ [90.91397688931355, 89.95135344853313, 91.05450236966826]
+ mean f1 scores for conditional variational autencoders is  90.63994423583831
+ std of f1 scores for conditional variational autoencoders is  0.49027530152518006
+
