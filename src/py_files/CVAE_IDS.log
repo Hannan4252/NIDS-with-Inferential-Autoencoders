@@ -1,0 +1,43 @@
+/var/spool/slurmd/job00482/slurm_script: line 9: module: command not found
+2020-10-20 01:11:28.255281: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2020-10-20 01:11:28.255336: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2020-10-20 01:11:28.255371: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (melko): /proc/driver/nvidia/version does not exist
+2020-10-20 01:11:28.292590: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2499950000 Hz
+2020-10-20 01:11:28.294818: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x80bdec0 executing computations on platform Host. Devices:
+2020-10-20 01:11:28.294850: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Using TensorFlow backend.
+WARNING:tensorflow:From /mnt/stud/home/ahannan/thesis_env/lib/python3.6/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+(2827876, 78)
+(2233164, 78)
+f1 scores for decision trees
+ [87.03578879794576, 87.42063364166694, 88.35603299443699, 87.15521991378473, 88.58768620932165, 87.8193285341148, 88.32320894802815, 88.48967021686128, 87.78219599794767, 87.8664049679848]
+ mean f1 scores for decision trees is  87.88361702220928
+ std of f1 scores for decision trees is  0.5251548297218481
+
+
+f1 scores for SVM
+ [83.28417542959731, 84.48109537887038, 84.44693992139247, 84.2366077029231, 84.43635907408569, 84.20269642026965, 84.68180964895814, 84.49402891263357, 84.49011365405573, 84.28070614748967]
+ mean f1 scores for SVM is  84.30345322902757
+ std of f1 scores for SVM is  0.3658126344038182
+
+
+f1 scores for autoencoders 
+ [58.419718958765266, 56.55490786745433, 58.11469700487578, 58.20889733545359, 57.27226582327906, 57.677354786558375, 58.06929342530886, 57.391643889105815, 57.61062630318943, 58.697584541062795]
+ mean f1 scores for autencoders is  57.80169899350534
+ std of f1 scores for autoencoders is  0.5979002971806446
+
+
+f1 scores for variational autoencoders 
+ [53.98758451623107, 53.8066212501494, 54.002551427204594, 53.90201085221832, 53.621153151707254, 53.95436812862041, 54.12855031358607, 53.74474053295933, 53.66338997890715, 53.19089120044982]
+ mean f1 scores for variational autencoders is  53.80018613520334
+ std of f1 scores for variational autoencoders is  0.2536050470591153
+
+
+f1 scores for conditional variational autoencoders 
+ [80.83504449007529, 87.84504826820466, 90.00151354623884, 89.31112000739076, 91.00087136804784, 90.88896202986146, 91.15658577809972, 90.90192033492097, 88.42977762657345, 88.53910477127398]
+ mean f1 scores for conditional variational autencoders is  88.8909948220687
+ std of f1 scores for conditional variational autoencoders is  2.9216231903413856
+
+
